@@ -1,1 +1,12 @@
+broker:
+  persistence: {storageClass: fha}
+controller:
+  persistence: {storageClass: fha}
+externalAccess:
+  broker:
+    service: {type: NodePort}
+global:
+  cattle: {clusterId: local, clusterName: local, rkePathPrefix: '', rkeWindowsPathPrefix: '',
+    systemProjectId: p-s4t7k, url: 'https://eonkube.k8si.local'}
+storageDefaultSetting: false
 
