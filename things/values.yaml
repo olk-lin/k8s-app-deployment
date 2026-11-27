@@ -1,28 +1,18 @@
-{
-  "global": {
-    "cattle": {
-      "clusterId": "local",
-      "clusterName": "local",
-      "rkePathPrefix": "",
-      "rkeWindowsPathPrefix": "",
-      "systemProjectId": "p-fsbfr",
-      "url": "https://eonkube.k8s1.local"
-    }
-  },
-  "mqtt": {
-    "service": {
-      "type": "NodePort"
-    }
-  },
-  "node": {
-    "service": {
-      "type": "NodePort"
-    }
-  },
-  "postgresql-ha": {
-    "persistence": {
-      "storageClass": "local-replica2-delay-bind"
-    }
-  },
-  "storageDefaultSetting": false
-}
+global:
+  cattle:
+    clusterId: local
+    clusterName: local
+    rkePathPrefix: ''
+    rkeWindowsPathPrefix: ''
+    systemProjectId: p-fsbfr
+    url: https://eonkube.k8s1.local
+mqtt:
+  service:
+    type: NodePort
+node:
+  service:
+    type: NodePort
+postgresql-ha:
+  persistence:
+    storageClass: local-replica2-delay-bind
+storageDefaultSetting: false
