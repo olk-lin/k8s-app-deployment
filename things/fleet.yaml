@@ -1,9 +1,10 @@
+
 defaultNamespace: fang-local
 
 helm:
   repo: https://manufacture-charts.infortrend.com
-  chart: kafka
+  chart: thingsboard
   version: "1.1.10+up3.4.0"
-  releaseName: kafka
+  releaseName: things
   valuesFiles:
     - values.yaml
