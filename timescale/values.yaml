@@ -6,13 +6,12 @@ global:
     rkeWindowsPathPrefix: ''
     systemProjectId: p-fsbfr
     url: https://eonkube.k8s1.local
-mqtt:
-  service:
-    type: NodePort
-node:
-  service:
-    type: NodePort
-postgresql-ha:
-  persistence:
+persistentVolumes:
+  data:
     storageClass: local-replica2-delay-bind
+  wal:
+    storageClass: local-replica2-delay-bind
+service:
+  primary:
+    type: NodePort
 storageDefaultSetting: false
