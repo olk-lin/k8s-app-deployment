@@ -1,1 +1,11 @@
+global:
+  cattle: {clusterId: local, clusterName: local, rkePathPrefix: '', rkeWindowsPathPrefix: '',
+    systemProjectId: p-s4t7k, url: 'https://eonkube.k8si.local'}
+mqtt:
+  service: {type: NodePort}
+node:
+  service: {type: NodePort}
+postgresql-ha:
+  persistence: {storageClass: fha}
+storageDefaultSetting: false
 
