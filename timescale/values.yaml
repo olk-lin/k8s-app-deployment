@@ -1,17 +1,9 @@
 global:
-  cattle:
-    clusterId: local
-    clusterName: local
-    rkePathPrefix: ''
-    rkeWindowsPathPrefix: ''
-    systemProjectId: p-fsbfr
-    url: https://eonkube.k8s1.local
+  cattle: {clusterId: local, clusterName: local, rkePathPrefix: '', rkeWindowsPathPrefix: '',
+    systemProjectId: p-s4t7k, url: 'https://eonkube.k8si.local'}
 persistentVolumes:
-  data:
-    storageClass: local-replica2-delay-bind
-  wal:
-    storageClass: local-replica2-delay-bind
+  data: {storageClass: fha}
+  wal: {storageClass: fha}
 service:
-  primary:
-    type: NodePort
+  primary: {type: NodePort}
 storageDefaultSetting: false
