@@ -1,1 +1,10 @@
-c
+
+defaultNamespace: fang-local
+
+helm:
+  repo: https://it-charts-dev.infortrend.com
+  chart: timescaledb-single
+  version: "1.1.10+uppg14.6-ts2.9.1-p1"
+  releaseName: timescale
+  valuesFiles:
+    - values.yaml
