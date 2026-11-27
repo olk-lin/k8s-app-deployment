@@ -3,7 +3,7 @@ defaultNamespace: fang-local
 helm:
   repo: https://manufacture-charts.infortrend.com
   chart: kafka
-  version: "1.1.13+up4.0.0"
+  version: "1.1.10+up3.4.0"
   releaseName: kafka
   valuesFiles:
     - values.yaml
