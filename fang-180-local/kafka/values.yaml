@@ -1,1 +1,24 @@
+broker:
+  persistence:
+    storageClass: local-replica2-delay-bind
+
+controller:
+  persistence:
+    storageClass: local-replica2-delay-bind
+
+externalAccess:
+  broker:
+    service:
+      type: NodePort
+
+global:
+  cattle:
+    clusterId: local
+    clusterName: local
+    rkePathPrefix: ''
+    rkeWindowsPathPrefix: ''
+    systemProjectId: p-fsbfr
+    url: https://eonkube.k8si.local
+
+storageDefaultSetting: false
 
