@@ -1,1 +1,19 @@
 
+global:
+  cattle:
+    clusterId: local
+    clusterName: local
+    rkePathPrefix: ''
+    rkeWindowsPathPrefix: ''
+    systemProjectId: p-fsbfr
+    url: https://eonkube.k8si.local
+mqtt:
+  service:
+    type: NodePort
+node:
+  service:
+    type: NodePort
+postgresql-ha:
+  persistence:
+    storageClass: local-replica2-delay-bind
+storageDefaultSetting: false
