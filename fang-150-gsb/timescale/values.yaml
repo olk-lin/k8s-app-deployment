@@ -1,1 +1,10 @@
+global:
+  cattle: {clusterId: local, clusterName: local, rkePathPrefix: '', rkeWindowsPathPrefix: '',
+    systemProjectId: p-s4t7k, url: 'https://eonkube.k8s1.local'}
+persistentVolumes:
+  data: {storageClass: gsb}
+  wal: {storageClass: gsb}
+service:
+  primary: {type: NodePort}
+storageDefaultSetting: false
 
